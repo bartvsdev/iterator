@@ -2,6 +2,11 @@
 
 The iterator library allows users to iterate over collections using a functional approach. 
 
+## Motivation
+Being new to the world of Go, while having a background in `C#` and `Rust`, I missed the capabilities of `Linq` and `Iterator` respectively. Furthermore, in search of a better way to check and handle errors, and inspired by Rob Pike's great article [Errors are values](https://go.dev/blog/errors-are-values), this attempt was made.
+
+Some of the code is inspired by the great [Soft/iter](https://github.com/Soft/iter) repository, check them out!
+
 ## Requirements
 
 Iterator requires Go version 1.18 or later.
@@ -38,6 +43,7 @@ func main() {
 }
 ```
 
-## Benchmarks
-*WIP*
-
+## TODO's
+- Benchmarking iterator approach vs for loop
+- Implementing other iterator generators/adapters/consumers
+- Add error wrapping
